@@ -70,10 +70,6 @@ img {
   margin-left: auto;
 }
 
-/* .icon {
-  fill: var(--icon-color);
-} */
-
 /*---------------site nav---------------*/
 .header {
   border-bottom: 1px solid #ececec;
@@ -136,6 +132,9 @@ img {
   margin-left: 50px;
 }
 .contacts .link {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -149,7 +148,6 @@ img {
 }
 .mail-icon,
 .phone-icon {
-  margin-right: 10px;
   fill: currentColor;
 }
 
@@ -241,9 +239,10 @@ img {
   margin-right: 30px;
 }
 .features-pic {
-  /* display: block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
-  padding: 25px 100px;
   margin-bottom: 30px;
   background: var(--secondary-bgc);
   border-radius: 4px;
@@ -300,7 +299,6 @@ img {
 
 .team-card-desc {
   padding: 30px 0 0;
-  margin-bottom: 16px;
 }
 
 .team-title {
@@ -312,6 +310,7 @@ img {
   color: var(--primary-text-color);
 }
 .team-profession {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -320,20 +319,21 @@ img {
 .socials {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-.socials-item {
-  padding: 12px;
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  cursor: pointer;
   border-radius: 50%;
   color: var(--icon-color);
 }
-.socials-item:not(last-child) {
-  margin-right: 10px;
-}
-.socials-item:hover,
-.socials-item:focus {
+
+.socials-link:hover,
+.socials-link:focus {
   background-color: var(--accent-color);
   color: var(--primary-bgc);
 }
@@ -349,9 +349,10 @@ img {
   display: flex;
 }
 
-.client-item .link {
-  display: block;
-  padding: 16px 32px;
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -362,15 +363,12 @@ img {
   margin-right: 30px;
 }
 
-.client-item .link:hover,
-.client-item .link:focus {
+.client-link:hover,
+.client-link:focus {
   border-color: var(--accent-color);
-}
-
-.client-item .link:hover,
-.client-item .link:focus {
   color: var(--accent-color);
 }
+
 .client-icon {
   width: 106px;
   height: 60px;
@@ -422,12 +420,12 @@ img {
 
   color: var(--primary-bgc);
 }
-.footer .socials-item {
+.footer .socials-link {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--primary-bgc);
 }
-.footer .socials-item:hover,
-.footer .socials-item:focus {
+.footer .socials-link:hover,
+.footer .socials-link:focus {
   background-color: var(--accent-color);
 }
 
