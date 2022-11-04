@@ -248,11 +248,6 @@ img {
   border-radius: 4px;
 }
 
-.features-icon {
-  width: 70px;
-  height: 70px;
-}
-
 .features-title {
   margin-bottom: 10px;
 
@@ -338,8 +333,6 @@ img {
   color: var(--primary-bgc);
 }
 .socials-icon {
-  width: 20px;
-  height: 20px;
   fill: currentColor;
 }
 
@@ -370,8 +363,6 @@ img {
 }
 
 .client-icon {
-  width: 106px;
-  height: 60px;
   fill: currentColor;
 }
 
@@ -385,7 +376,7 @@ img {
 .footer-container {
   display: flex;
   gap: 70px;
-  justify-content: baseline;
+  align-items: baseline;
 }
 .logo-footer {
   color: var(--primary-bgc);
@@ -406,6 +397,8 @@ img {
   color: var(--footer-contact-color);
 }
 
+.footer-post:hover,
+.footer-post:focus,
 .footer-contact:hover,
 .footer-contact:focus {
   color: var(--accent-color);
@@ -414,7 +407,7 @@ img {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
